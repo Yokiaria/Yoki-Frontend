@@ -1,0 +1,6 @@
+{
+  "name": "GRANDSTARIND - Indonesian Luxury Concierge",
+  "description": "An exquisite digital travel concierge and wallet booking engine curated for high-fidelity Indonesian hotels, online check-in, and premium promotions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
