@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-[#031636]: #031636;
+    --color-[#1a2b4c]: #1a2b4c;
+    --color-[#fed023]: #fed023;
+    --color-[#00a858]: #00a858;
+    --color-[#735c00]: #735c00;
+
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-h1: "Plus Jakarta Sans", system-ui, sans-serif;
+    --font-h2: "Plus Jakarta Sans", system-ui, sans-serif;
+    --font-display-lg: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* Custom modern smooth scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: #f7f9fb;
+    color: #191c1e;
+    overflow-x: hidden;
+}
+
+
+@theme {
+  --color-primary: #031636;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1a2b4c;
+  --color-on-primary-container: #8293ba;
+  --color-inverse-primary: #b6c6f0;
+  /* Shade tokens for primary — used by admin components (bg-primary-600 etc.) */
+  --color-primary-400: #364669;
+  --color-primary-500: #1a2b4c;
+  --color-primary-600: #031636;
+  --color-primary-700: #020f26;
+  --color-secondary: #735c00;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fed023;
+  --color-on-secondary-container: #6f5900;
+  --color-tertiary: #001c09;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #003316;
+  --color-on-tertiary-container: #00a858;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #d8e2ff;
+  --color-primary-fixed-dim: #b6c6f0;
+  --color-on-primary-fixed: #071b3b;
+  --color-on-primary-fixed-variant: #364669;
+  --color-secondary-fixed: #ffe084;
+  --color-secondary-fixed-dim: #eec209;
+  --color-on-secondary-fixed: #231b00;
+  --color-on-secondary-fixed-variant: #574500;
+  --color-tertiary-fixed: #6bfe9c;
+  --color-tertiary-fixed-dim: #4ae183;
+  --color-on-tertiary-fixed: #00210c;
+  --color-on-tertiary-fixed-variant: #005228;
+  --color-background: #f7f9fb;
+  --color-on-background: #191c1e;
+  --color-surface: #f7f9fb;
+  --color-on-surface: #191c1e;
+  --color-surface-variant: #e0e3e5;
+  --color-on-surface-variant: #44474e;
+  --color-inverse-surface: #2d3133;
+  --color-inverse-on-surface: #eff1f3;
+  --color-outline: #75777f;
+  --color-outline-variant: #c5c6cf;
+  --color-surface-tint: #4e5e82;
+  --color-surface-bright: #f7f9fb;
+  --color-surface-dim: #d8dadc;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-container-high: #e6e8ea;
+  --color-surface-container-highest: #e0e3e5;
+
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --radius-24: 24px;
+}
+
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Material Symbols Setup */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined[data-weight="fill"] {
+  font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar-thumb {
+  background-color: rgba(3, 22, 54, 0.1);
+  border-radius: 20px;
+}
+
+/* Custom checkbox animation */
+.facility-checkbox:checked + div {
+  background-color: #031636;
+  border-color: #031636;
+}
+
+.facility-checkbox:checked + div span {
+  color: #ffffff;
+}
+
+/* Tooltip & utilities */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #031636 !important;
+  box-shadow: 0 0 0 2px rgba(3, 22, 54, 0.2) !important;
+}
